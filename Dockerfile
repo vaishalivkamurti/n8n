@@ -8,5 +8,5 @@ ENV N8N_PATH=/
 EXPOSE 5678
 
 # Use the correct entrypoint
-#ENTRYPOINT ["tini", "--", "/usr/local/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["tini", "--", "/usr/local/bin/docker-entrypoint.sh"]
 CMD ["n8n"]
